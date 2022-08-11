@@ -41,8 +41,8 @@
             </div>
         </div>
         <hr>
-        <ul id="placeList" style="position: absolute; top: 0; right: 0; z-index: 90;"></ul>
-        <div id="pagination" style="position: absolute; top: 0; right: 0; z-index: 90;"></div>
+        <ul id="placeList" style="position: absolute; top: 30px; right: 0; z-index: 90;"></ul>
+        <div id="pagination" style="position: absolute; top: 30px; right: 0; z-index: 90;"></div>
     </div>
 </div>
 
@@ -209,15 +209,15 @@
             '<div class="info">' +
             '   <h5>' + places.place_name + '</h5>';
 
-        if (places.road_address_name) {
-            itemStr += '    <span>' + places.road_address_name + '</span>' +
-                '   <span class="jibun gray">' +  places.address_name  + '</span>';
-        } else {
-            itemStr += '    <span>' +  places.address_name  + '</span>';
-        }
-
-        itemStr += '  <span class="tel">' + places.phone  + '</span>' +
-            '</div>';
+        // if (places.road_address_name) {
+        //     itemStr += '    <span>' + places.road_address_name + '</span>' +
+        //         '   <span class="jibun gray">' +  places.address_name  + '</span>';
+        // } else {
+        //     itemStr += '    <span>' +  places.address_name  + '</span>';
+        // }
+        //
+        // itemStr += '  <span class="tel">' + places.phone  + '</span>' +
+        //     '</div>';
 
         el.innerHTML = itemStr;
         el.className = 'item';
